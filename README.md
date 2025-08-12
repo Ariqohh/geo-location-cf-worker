@@ -53,8 +53,8 @@ geo-locations-worker/
 ### 1️⃣ Clone the Repository
 
 ```bash
-git clone <your-repo-url>
-cd geo-locations-worker
+git clone https://github.com/Pradeeparul2/geo-location-cf-worker.git
+cd geo-location-cf-worker
 ```
 
 ### 2️⃣ Install Dependencies
