@@ -16,6 +16,19 @@ By leveraging edge computing, the lookup and response happen ultra-fast, directl
 - 🛠 **TypeScript** + Wrangler + Vitest setup
 
 ---
+## ⚡️ Cloudflare Workers vs Third-Party Geo Location APIs
+
+| Aspect | Cloudflare Workers Geo API | Third-Party Geo Location API |
+|--------|----------------------------|------------------------------|
+| **Data Source** | Cloudflare uses its **own global CDN edge network** to detect geo info directly from the incoming request. | Data is fetched from the provider’s database using your request’s IP address. |
+| **IP Exposure** | **No raw IP exposure** — Cloudflare only gives country, region, city, ASN, etc., in the Worker environment without revealing the actual IP. | Usually requires sending the raw IP address to the provider, which may be stored or logged. |
+| **Privacy Compliance** | **Built-in GDPR/CCPA-friendly** since no personal data leaves Cloudflare’s edge. | Compliance depends on the provider’s policies and where their servers are located. |
+| **Latency** | **Ultra-fast** — processed at the **edge**, no external network calls. | **Slower** — involves a round trip to the API provider’s server, often in a different region. |
+| **Reliability** | Works entirely within Cloudflare’s infra; no dependency on external API uptime. | Dependent on third-party API uptime and rate limits. |
+| **Cost** | Free with Cloudflare Workers (within limits). | Often paid based on requests (after free tier). |
+| **Customization** | Can integrate directly into your Worker logic for personalization, analytics, and A/B testing at the edge. | Requires API call, parse response, then apply logic in your own code. |
+
+---
 
 ## 📦 Tech Stack
 
