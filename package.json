@@ -1,7 +1,24 @@
 {
-	"name": "geo-locations",
-	"version": "0.0.0",
-	"private": true,
+	"name": "geo-locations-worker",
+	"version": "0.0.1",
+	"description": "A Cloudflare Worker to handle geo-location requests",
+	"main": "src/index.ts",
+	"author": "Pradeep Arul",
+	"license": "MIT",
+	"repository": {
+		"type": "git",
+		"url": ""
+	},
+	"keywords": [
+		"cloudflare",
+		"worker",
+		"geo-location",
+		"api",
+		"typescript"
+	],
+	"engines": {
+		"node": ">=20.0.0"
+	},
 	"scripts": {
 		"deploy": "wrangler deploy",
 		"dev": "wrangler dev",
