@@ -1,7 +1,9 @@
 # 🌍 Geo Locations Worker
 
-A Cloudflare Worker that returns **country, region, city, and other geo information** about the incoming request without exposing the raw IP address.  
-This is useful for analytics, personalization, and location-based features — while keeping GDPR/CCPA compliance in mind.
+A privacy-first Cloudflare Worker that returns **country**, **region**, **city**, and **other geo information** about the incoming request — without exposing the raw IP address.
+Built with GDPR/CCPA-compliant practices at its core, it ensures zero personal data leakage while still enabling accurate location insights.
+
+By leveraging edge computing, the lookup and response happen ultra-fast, directly at Cloudflare’s global network, minimizing latency and delivering real-time geo data for analytics, personalization, and location-based features — all without compromising user privacy.
 
 ---
 
