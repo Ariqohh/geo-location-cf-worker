@@ -161,4 +161,4 @@ npm test
 
 ## 📄 License
 
-MIT © 2025 [Pradeep Arul](https://github.com/<your-github>)
+MIT © 2025 [Pradeep Arul](https://github.com/Pradeeparul2)
